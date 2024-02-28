@@ -52,13 +52,7 @@
 
 <template>
 	<div class="max-w-xl mx-auto text-black">
-		<a
-			href="https://vercel.com/templates/next.js/blob-sveltekit"
-			class="flex justify-center px-10 py-2 mx-auto space-x-1 text-sm font-medium text-center text-gray-600 transition-all rounded-full shadow-sm group bg-white/30 ring-1 ring-gray-900/5 hover:shadow-lg active:shadow-sm"
-		>
-			Deploy your own to Vercel
-		</a>
-		<h1 class="my-8 text-5xl font-bold text-center text-black">AI Chatbot</h1>
+		<h1 class="my-8 text-5xl font-bold text-center text-black">BaoJai Chatbot</h1>
 		<div class="max-w-xl mx-auto">
 			<div class="bg-white rounded-md shadow h-[60vh] flex flex-col justify-between">
 				<div class="h-full overflow-auto chat-messages">
@@ -122,10 +116,11 @@
 			<div class="flex items-center justify-center my-2">
 				<span>Built with</span>
 				<a
-					href="https://openai.com/blog/gpt-3-apps"
+					href="https://gemini.google.com"
 					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
-					<p>gpt-3</p>
+					<img src="/gemini.svg" alt="Gemini Logo" class="h-4" />
+					<p>Gemini 1.0 Pro</p>
 				</a>
 				<span>and</span>
 				<a
@@ -137,16 +132,30 @@
 				</a>
 				.
 			</div>
-			<div class="flex flex-col items-center justify-center">
-				<a href="https://vercel.com">
-					<img src="/vercel.svg" alt="Vercel Logo" class="h-4 my-2 text-white" />
+			<div class="flex items-center justify-center my-2">
+				<a
+					href="https://github.com/fonylew/baojai-chatbot"
+					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
+				>
+					<img src="/github.svg" alt="GitHub Logo" class="h-5" />
+					<p>Sourcecode</p>
 				</a>
+				<span>  and  </span>
 				<a
 					href="https://github.com/StephDietz/nuxt-ai-chat"
-					class="flex items-center font-medium underline transition-colors underline-offset-4 hover:text-black/70"
+					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
 				>
-					<img src="/github.svg" alt="GitHub Logo" class="h-4" />
-					<p class="ml-1">Source</p>
+					<img src="/github.svg" alt="GitHub Logo" class="h-5" />
+					<p>Template</p>
+				</a>
+			</div>
+			<div class="flex items-center justify-center my-2">
+				<span>Collaborated with </span>
+				<a
+					href="https//aimet.tech"
+					class="flex items-center mx-1 font-medium underline transition-colors underline-offset-4 hover:text-black/70"
+				>
+					<p class="ml-1">🧠 AIMET.tech</p>
 				</a>
 			</div>
 		</div>
@@ -160,7 +169,7 @@
 		border-radius: 50%;
 		display: block;
 		position: relative;
-		color: #d3d3d3;
+		color: rgb(147 197 253);
 		box-sizing: border-box;
 		animation: animloader 2s linear infinite;
 	}

@@ -1,4 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Baojai Chatbot
+
+Powered by [Gemini 1.0 pro](https://ai.google.dev/)
+
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -40,4 +43,7 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# reddit-summary
+# Acknowledgement
+**Google Cloud credits are provided for this project.**  **#GeminiSprint**
+
+The original Chat UI is from (StephDietz/nuxt-ai-chat)[https://github.com/StephDietz/nuxt-ai-chat], deployed from (Vercel)[https://vercel.app/].
