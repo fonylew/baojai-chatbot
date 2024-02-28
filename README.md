@@ -46,4 +46,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 # Acknowledgement
 **Google Cloud credits are provided for this project.**  **#GeminiSprint**
 
-The original Chat UI is from (StephDietz/nuxt-ai-chat)[https://github.com/StephDietz/nuxt-ai-chat], deployed from (Vercel)[https://vercel.app/].
+The original Chat UI is from [StephDietz/nuxt-ai-chat](https://github.com/StephDietz/nuxt-ai-chat), deployed from [Vercel](https://vercel.app/).
+
+This project is in collaboration with [AIMET.tech](https://aimet.tech)
