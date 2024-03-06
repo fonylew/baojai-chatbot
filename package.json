@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "eventsource-parser": "^0.1.0",
-    "@google/genai": "^3.2.1",
+    "@google/generative-ai": "^0.2.1",
     "stream": "^0.0.2"
   }
 }
