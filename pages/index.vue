@@ -2,7 +2,7 @@
 	const messages = ref([
 		{
 			role: 'AI',
-			message: 'Hello! How can I help you?'
+			message: 'สวัสดีค่ะ ฉันชื่อเบาใจ มีเรื่องอะไรอยากปรึกษาไหมคะ เล่ามาได้เลย'
 		}
 	]);
 	const loading = ref(false);
