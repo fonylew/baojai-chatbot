@@ -107,10 +107,9 @@ export default defineEventHandler(async (event) => {
     topP: 1,
     maxOutputTokens: 2048,
   };
-  let prompt = messages.map((message) => {text: `${message.message}`});
+  // let prompt = messages.map((message) => {text: `${message.message}`});
   const parts = [
-    {text: PROMPT},
-    ...prompt
+    {text: PROMPT + messages + message.toString()},
   ];
   console.log(parts)
   const result = await model.generateContent({
