@@ -109,7 +109,7 @@ export default defineEventHandler(async (event) => {
   };
   // let prompt = messages.map((message) => {text: `${message.message}`});
   const parts = [
-    {text: PROMPT + messages + message.toString()},
+    {text: PROMPT + messages.toString()},
   ];
   console.log(parts)
   const result = await model.generateContent({
