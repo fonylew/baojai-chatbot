@@ -111,10 +111,10 @@ export default defineEventHandler(async (event) => {
     {text: PROMPT},
   ];
   let prompt = messages.map((message) => {text: `${message.message}`});
-	parts.concat(prompt);
-  console.log(parts)
+	let content = parts.concat(prompt);
+  console.log(content)
   const result = await model.generateContent({
-      contents: [{ role: "user", parts }],
+      contents: [{ role: "user", content }],
       generationConfig,
       safetySettings,
   });
