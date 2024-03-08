@@ -121,9 +121,7 @@ export default defineEventHandler(async (event) => {
   console.log(2);
   const response = result.response;
   console.log(response.text());
-  return {
-		message: response.json().chat_response
-	};
+  return response.text();
 
   /*
 	const req = await fetch('https://api.openai.com/v1/completions', {

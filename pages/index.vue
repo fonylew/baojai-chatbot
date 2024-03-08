@@ -36,7 +36,7 @@
 			const response = await res.json();
 			messages.value.push({
 				role: 'AI',
-				message: response?.message
+				message: response?.chat_response
 			});
 		} else {
 			messages.value.push({
