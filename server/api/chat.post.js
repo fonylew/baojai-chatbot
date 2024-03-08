@@ -117,7 +117,7 @@ export default defineEventHandler(async (event) => {
   const response = result.response;
   console.log(response.text());
   return {
-		message: result.chat_response
+		message: response.chat_response
 	};
 
   /*
