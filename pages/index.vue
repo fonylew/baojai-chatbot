@@ -12,7 +12,7 @@
 		setTimeout(() => {
 			const chatMessages = document.querySelector('.chat-messages > div:last-child');
 			chatMessages?.scrollIntoView({ behavior: 'smooth', block: 'end' });
-		}, 500);
+		}, 100);
 	};
 
 	const sendPrompt = async () => {
