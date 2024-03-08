@@ -94,6 +94,10 @@ export default defineEventHandler(async (event) => {
 	let messages = [];
 	const previosMessages = await readBody(event);
 	messages = messages.concat(previosMessages);
+
+  console.log(1);
+  console.log(messages);
+
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: MODEL_NAME });
 
@@ -113,8 +117,9 @@ export default defineEventHandler(async (event) => {
       generationConfig,
       safetySettings,
   });
-  
+  console.log(2);
   const response = result.response;
+  console.log(response);
   console.log(response.text());
   return {
 		message: response.chat_response
