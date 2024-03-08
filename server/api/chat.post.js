@@ -112,6 +112,7 @@ export default defineEventHandler(async (event) => {
   ];
   let prompt = messages.map((message) => {text: `${message.message}`});
 	parts.push(...prompt);
+  console.log(parts)
   const result = await model.generateContent({
       contents: [{ role: "user", parts }],
       generationConfig,
@@ -119,10 +120,9 @@ export default defineEventHandler(async (event) => {
   });
   console.log(2);
   const response = result.response;
-  console.log(response);
   console.log(response.text());
   return {
-		message: response.chat_response
+		message: response.json().chat_response
 	};
 
   /*
