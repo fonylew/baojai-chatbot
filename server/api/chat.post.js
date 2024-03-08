@@ -106,8 +106,8 @@ export default defineEventHandler(async (event) => {
   const parts = [
     {text: PROMPT},
   ];
-  let prompt = messages.map((message) => `${message.role}: ${message.message}`).join('\n') + `\nAI:`;
-	parts.push(prompt);
+  let prompt = messages.map((message) => {text: `${message.message}`});
+	parts.push(...prompt);
   const result = await model.generateContent({
       contents: [{ role: "user", parts }],
       generationConfig,
