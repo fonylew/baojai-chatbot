@@ -58,6 +58,6 @@ export default defineEventHandler(async (event) => {
   });
   console.log("response");
   const response = result.response;
-  console.log(response.text());
-  return response.text();
+  console.log(JSON.stringify(response, null, 2));
+  return JSON.stringify(response, null, 2);
 });
