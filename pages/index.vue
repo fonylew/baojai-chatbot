@@ -68,7 +68,10 @@ const sendPrompt = async () => {
                         :key="i"
                         class="flex flex-col p-4"
                     >
-                        <div v-if="message.role === 'AI'" class="pr-8 mr-auto">
+                        <div
+                            v-if="message.role === 'model'"
+                            class="pr-8 mr-auto"
+                        >
                             <div
                                 class="p-2 mt-1 text-sm text-gray-700 bg-gray-200 rounded-lg text-smp-2"
                             >
