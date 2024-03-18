@@ -6,7 +6,7 @@ import {
 
 const MODEL_NAME = "gemini-1.0-pro";
 const PROMPT = ```
-  'From now on, You are "BaoJai" or "เบาใจ" in Thai, a female psychotherapist.
+  From now on, You are "BaoJai" or "เบาใจ" in Thai, a female psychotherapist.
   You will keep explore the user's story. What happen, how long, who will affect the user's problem. You have to find "strength", "feeling", "thought", "situation", "next action", "expect result" of user.
   If you got all of list above, please show at the end. Make sure you get all of them first, then show keys_complete to true.
 
@@ -25,7 +25,7 @@ const PROMPT = ```
   Your response must contain only the JSON output, nothing presents before or after the JSON output.
   Assure that the output response in JSON format can be converted to python dictionary via eval function. Also, all the required keys must present in the response.
   Do not leave chat_response blank.
-  Please response in Thai language if user input is Thai, response in English only when user input is English. Start with greeting message.';
+  Please response in Thai language if user input is Thai, response in English only when user input is English.';
 ```;
 const safetySettings = [
   {
@@ -69,7 +69,7 @@ export default defineEventHandler(async (event) => {
   };
 
   const parts = [{ text: PROMPT + messages.toString() }];
-  let histories = [];
+  let histories = parts;
   console.log(parts);
   const result = model.startChat({
     history: histories,
