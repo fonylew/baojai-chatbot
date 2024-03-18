@@ -49,15 +49,14 @@ export default defineEventHandler(async (event) => {
   };
 
   const parts = [{ text: PROMPT + messages.toString() }];
-  let histories = [{ role: "user", parts: parts }];
   console.log(parts);
-  const result = model.startChat({
-    history: histories,
+  const result = await model.generateContent({
+    contents: [{ role: "user", parts }],
     generationConfig,
     safetySettings,
   });
   console.log("response");
   const response = result.response;
-  console.log(JSON.stringify(response, null, 2));
-  return JSON.stringify(response, null, 2);
+  console.log(response.text());
+  return response.text();
 });
